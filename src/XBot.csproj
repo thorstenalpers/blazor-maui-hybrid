@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+        <TargetFrameworks>net8.0-windows10.0.19041.0</TargetFrameworks>
         <OutputType>Exe</OutputType>
         <RootNamespace>XBot</RootNamespace>
         <UseMaui>true</UseMaui>
@@ -20,8 +20,8 @@
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
         <ApplicationVersion>1</ApplicationVersion>
 		<WindowsPackageType>None</WindowsPackageType>
-        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
-        <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+        <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
         <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
         <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
         <PackageCertificateThumbprint>6A5EB3ADC7715E0469D9B798D428ED0148B9481B</PackageCertificateThumbprint>
